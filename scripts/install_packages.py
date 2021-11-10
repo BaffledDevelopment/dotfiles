@@ -52,7 +52,6 @@ PACKAGES = {
         "steam": "pacman"
     },
     "development": {
-    	"jre11-openjdk": "pacman",
         "dbeaver": "pacman",
         "gitkraken": "aur",
         "clion-jre": "aur",
@@ -68,14 +67,14 @@ PACKAGES = {
     },
     "development-python": {
         "python37": "aur",
-        "python38": "aur"
+        "python38": "aur",
         "pycharm-community-edition": "pacman",
     },
     "development-java": {
         "jre11-openjdk": "pacman",
-        "jdk11-openjdk": "pacman"
+        "jdk11-openjdk": "pacman",
         "jre14-openjdk": "pacman",
-        "jdk14-openjdk": "pacman"
+        "jdk14-openjdk": "pacman",
         "intellij-idea-ultimate-edition": "aur",
     },
     "development-micro": {
@@ -113,7 +112,7 @@ PACKAGES = {
         "parsec-bin": "aur",
         "anydesk-bin": "aur",
         "krdc": "pacman",
-        "krfb": "pacman"
+        "krfb": "pacman",
     },
     "touchpad-gestures": {
         #"touchegg": "aur.laptop"
