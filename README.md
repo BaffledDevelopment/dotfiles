@@ -1,8 +1,8 @@
-# dotfiles for EndeavourOS on Lenovo S940
+# dotfiles for EndeavourOS in general
 
 ## Prep
 ```bash
-git clone https://github.com/BananaLoaf/dotfiles.git $HOME/.dotfiles && cd $HOME/.dotfiles
+git clone https://github.com/BaffledDevelopment/dotfiles.git $HOME/.dotfiles && cd $HOME/.dotfiles
 
 
 # Backups and stuff
@@ -21,11 +21,11 @@ sudo systemctl start grub-btrfs.path
 
 # Fixes
 bash scripts/fix_lusk_btrfs_swap.sh
-bash scripts/fix_vol_keys.sh  # Not sure if usefull anymore
+bash scripts/fix_vol_keys.sh  # Not sure if useful anymore
 sudo nano /etc/pam.d/sddm  # or bash scripts/gnome_keyring_autostart.sh but it doesn't work
 
 
-# Battety optimizations
+# Battery optimizations, useless on stationary PC
 sudo pacman -S tlp powertop
 
 sudo systemctl enable tlp.service
@@ -51,7 +51,10 @@ bash sync_sddm_theme.sh
 # Sync packages
 bash scripts/remove_packages.sh
 sudo pacman -Syu
-python scripts/install_packages.py
+
+## Don't forget to check --help, add -a to enable AUR packages to install and -p for Pacman as well
+python scripts/install_packages.py 
+
 bash scripts/install_local.sh
 
 # Sync settings
