@@ -5,12 +5,12 @@ import argparse
 PACKAGES = {
     "core-utils": {
         # "linux-lts419": "aur",
-        "linux-zen": "aur",
-        "vulkan-intel": "pacman",
-        "lib32-vulkan-intel": "pacman",
+        #"linux-zen": "aur",
+        #"vulkan-intel": "pacman",
+        #"lib32-vulkan-intel": "pacman",
         # "pulseaudio": "pacman",
-        "pulseaudio-bluetooth": "pacman",
-        "intel-gpu-tools": "pacman",
+        #"pulseaudio-bluetooth": "pacman",
+        #"intel-gpu-tools": "pacman",
         # "intel-compute-runtime": "pacman",
         # "intel-opencl": "aur",
         # "level-zero-loader": "pacman",
@@ -32,7 +32,7 @@ PACKAGES = {
         # "strace": "pacman",
         "gocryptfs": "pacman",
         # "tunnelbear": "aur",
-        "bitwarden-bin": "aur"
+        #"bitwarden-bin": "aur"
     },
     "media": {
         "pix": "aur",
@@ -71,15 +71,22 @@ PACKAGES = {
         "python38": "aur"
         "pycharm-community-edition": "pacman",
     },
+    "development-java": {
+        "jre11-openjdk": "pacman",
+        "jdk11-openjdk": "pacman"
+        "jre14-openjdk": "pacman",
+        "jdk14-openjdk": "pacman"
+        "intellij-idea-ultimate-edition": "aur",
+    },
     "development-micro": {
-        "kicad": "pacman",
-        "kicad-library": "pacman",
-    	"arduino-avr-core": "pacman",
-        "arduino": "aur",
-        "arduino-pro-ide": "aur",
-        "platformio": "aur",
-        "esp-idf": "aur",
-        "xtensa-esp32-elf-gcc-bin": "aur"
+        #"kicad": "pacman",
+        #"kicad-library": "pacman",
+    	#"arduino-avr-core": "pacman",
+        #"arduino": "aur",
+        #"arduino-pro-ide": "aur",
+        #"platformio": "aur",
+        #"esp-idf": "aur",
+        #"xtensa-esp32-elf-gcc-bin": "aur"
     },
     "personalization": {
         "latte-dock-git": "aur",
@@ -109,7 +116,7 @@ PACKAGES = {
         "krfb": "pacman"
     },
     "touchpad-gestures": {
-        "touchegg": "aur.laptop"
+        #"touchegg": "aur.laptop"
         # "ruby-fusuma": "aur.laptop",
         # "ruby-fusuma-plugin-keypress": "aur.laptop"
     },
@@ -122,7 +129,7 @@ PACKAGES = {
         "texlive-langcyrillic": "pacman",
         "aspell-en": "pacman",
         "aspell-ru": "pacman",
-    }
+    },
     "utils": {
         "xdotool": "pacman",
         "gutenprint": "pacman",
@@ -139,7 +146,7 @@ PACKAGES = {
         # "imagemagick": "pacman",
         # "kdialog": "pacman",
         "gotop": "aur",
-        "trezor-suite-appimage": "aur"
+        "trezor-suite-appimage": "aur",
         "ksysguard-gpu": "aur",
         # "plasma-systemmonitor": "pacman",
         "sshfs": "pacman",
